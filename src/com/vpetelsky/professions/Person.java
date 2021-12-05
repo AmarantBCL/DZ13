@@ -1,4 +1,4 @@
-package com.company.professions;
+package com.vpetelsky.professions;
 
 import java.time.LocalDate;
 import java.time.Period;

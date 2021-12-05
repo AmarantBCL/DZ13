@@ -1,7 +1,7 @@
-package com.company.vehicles;
+package com.vpetelsky.vehicles;
 
-import com.company.details.Engine;
-import com.company.professions.Driver;
+import com.vpetelsky.details.Engine;
+import com.vpetelsky.professions.Driver;
 
 public class Lorry extends Car {
 

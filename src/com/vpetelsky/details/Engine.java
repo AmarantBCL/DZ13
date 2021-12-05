@@ -1,4 +1,4 @@
-package com.company.details;
+package com.vpetelsky.details;
 
 public class Engine {
 

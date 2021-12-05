@@ -1,8 +1,8 @@
-package com.company;
+package com.vpetelsky;
 
-import com.company.vehicles.*;
-import com.company.details.*;
-import com.company.professions.*;
+import com.vpetelsky.vehicles.*;
+import com.vpetelsky.details.*;
+import com.vpetelsky.professions.*;
 
 import java.time.LocalDate;
 
