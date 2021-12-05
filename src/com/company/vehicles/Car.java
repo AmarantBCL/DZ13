@@ -5,11 +5,11 @@ import com.company.professions.Driver;
 
 public class Car {
 
-    protected String model;
-    protected String carClass;
-    protected double weight;
-    protected Driver driver;
-    protected Engine engine;
+    protected final String model;
+    protected final String carClass;
+    protected final double weight;
+    protected final Driver driver;
+    protected final Engine engine;
 
     public String getModel() {
         return model;

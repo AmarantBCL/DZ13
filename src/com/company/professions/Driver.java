@@ -1,11 +1,14 @@
 package com.company.professions;
 
 import java.time.LocalDate;
-import java.time.Period;
 
 public class Driver extends Person {
 
-    private int experience;
+    private final int experience;
+
+    public int getExperience() {
+        return experience;
+    }
 
     public Driver(String fullName, LocalDate birthday, int experience) {
         super(fullName, birthday);

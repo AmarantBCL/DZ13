@@ -5,9 +5,13 @@ import com.company.professions.Driver;
 
 public class SportCar extends Car {
 
-    private int maxSpeed;
+    private final double maxSpeed;
 
-    public SportCar(String model, String carClass, double weight, Driver driver, Engine engine, int maxSpeed) {
+    public double getMaxSpeed() {
+        return maxSpeed;
+    }
+
+    public SportCar(String model, String carClass, double weight, Driver driver, Engine engine, double maxSpeed) {
         super(model, carClass, weight, driver, engine);
         this.maxSpeed = maxSpeed;
     }

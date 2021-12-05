@@ -2,8 +2,8 @@ package com.company.details;
 
 public class Engine {
 
-    private double power;
-    private String manufacturer;
+    private final double power;
+    private final String manufacturer;
 
     public double getPower() {
         return power;

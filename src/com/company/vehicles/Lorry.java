@@ -5,11 +5,15 @@ import com.company.professions.Driver;
 
 public class Lorry extends Car {
 
-    private float capacity;
+    private final int loadCapacity;
 
-    public Lorry(String model, String carClass, double weight, Driver driver, Engine engine, float capacity) {
+    public int getLoadCapacity() {
+        return loadCapacity;
+    }
+
+    public Lorry(String model, String carClass, double weight, Driver driver, Engine engine, int loadCapacity) {
         super(model, carClass, weight, driver, engine);
-        this.capacity = capacity;
+        this.loadCapacity = loadCapacity;
     }
 
     @Override
@@ -20,7 +24,7 @@ public class Lorry extends Car {
                 ", weight=" + weight +
                 ", driver=" + driver +
                 ", engine=" + engine +
-                ", capacity=" + capacity +
+                ", capacity=" + loadCapacity +
                 '}';
     }
 }

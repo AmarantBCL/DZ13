@@ -11,15 +11,18 @@ public class Person {
     protected String fullName;
     protected String birthday;
 
+    public String getFullName() {
+        return fullName;
+    }
+
     public Person(String fullName, LocalDate birthday) {
         this.fullName = fullName;
         this.birthday = birthday.format(FORMATTER);
     }
 
-    public void showAge() {
+    public int getAge() {
         LocalDate date = LocalDate.parse(birthday, FORMATTER);
-        int period = Period.between(date, LocalDate.now()).getYears();
-        System.out.printf("%s: %d years old\n", fullName, period);
+        return Period.between(date, LocalDate.now()).getYears();
     }
 
     @Override
